@@ -11,7 +11,7 @@ app = Flask(__name__)
 # Apply Flask CORS
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-app.config['UPLOAD_FOLDER'] = "static/api"
+app.config['UPLOAD_FOLDER'] = "static\\api"
 
 yolov6_model = my_yolov6.my_yolov6("weights/best_ckpt.pt", "cpu", "data/vinbigdata.yaml", 640, False)
 
