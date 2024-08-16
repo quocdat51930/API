@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+
+#train: C:/Users/Quoc Dat/Documents/YOLOv6/data/vinbigdata/images/train
+#val: C:/Users/Quoc Dat/Documents/YOLOv6/data/vinbigdata/images/test
+
+# is_coco: False
+# nc: 14
+# names: ['Phình động mạch chủ', 'Xẹp phổi', 'Vôi hóa', 'Tim to', 'Đông đặc phổi', 'Phổi kẽ', 'Thâm nhiễm', 'Mờ phổi', 'Khối u', 'Tổn thương khác', 'Tràn dịch màn phổi', 'Màng phổi dày', 'Tràn khí phế mạc', 'Xơ phổi']
+
+# names: ['Phinh dong mach chu', 'Xep phoi', 'Voi hoa', 'Tim to', 'Dong dac phoi', 'Phoi ke', 'Tham nhiem', 'Mo phoi', 'Khoi u', 'Ton thuong khac', 'Tran dich mang phoi', 'Mang phoi day', 'Tran khi mang phoi', 'Xo phoi']
+names: ['Aortic enlargement', 'Atelectasis', 'Calcification', 'Cardiomegaly', 'Consolidation', 'ILD', 'Infiltration', 'Lung Opacity', 'Nodule/Mass', 'Other lesion', 'Pleural effusion', 'Pleural thickening', 'Pneumothorax', 'Pulmonary fibrosis']
