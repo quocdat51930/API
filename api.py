@@ -13,7 +13,7 @@ CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['UPLOAD_FOLDER'] = "api_xray\\static\\api"
 
-yolov6_model = my_yolov6.my_yolov6("api_xray/weights/best_ckpt.pt", "cpu", "api_xray/data/vinbigdata.yaml", 640, False)
+yolov6_model = my_yolov6.my_yolov6("weights/best_ckpt.pt", "cpu", "data/vinbigdata.yaml", 640, False)
 
 @app.route('/', methods=['POST'] )
 def predict_yolov6():
@@ -39,4 +39,5 @@ def predict_yolov6():
     return 'Upload file to detect'
 # Start Backend
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='6868')
+    # app.run(host='0.0.0.0', port='6868')
+    app.run(debug=True)
